@@ -37,3 +37,7 @@ In the app: ```mkdir lib```
 
 Navigate to the home folder and type: ```dev_appserver.py ./```
 
+## Editing your sheets
+
+In reddit_data.py, changed the 'spreadsheetId' and 'rangeName' variables to your represent your sheet
+
