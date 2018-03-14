@@ -18,6 +18,14 @@ Go to the directory you'd like to add this project and in terminal:
 
 ```pip install google-auth google-auth-httplib2 google-api-python-client```
 
+We now need to add the Google libraries to the app. To do so we'll need to find the path of your existing app, then install the Google libraries via pip.
+
+* Navigate to the app home directory
+* Type ```pwd``` to find the file path
+* Execute ```pip install -t <path copied above>/lib google-auth google-auth-httplib2 google-api-python-client --upgrade```
+
+Now the packages should be installed in the lib folder
+
 ## Adding to this app
 
 Create a library folder for App Engine to use in production:
