@@ -23,8 +23,8 @@ In terminal: ```pip install google-auth google-auth-httplib2 google-api-python-c
 
 We now need to add the Google libraries to the app. To do so we'll need to find the path of your existing app, then install the Google libraries via pip.
 
-* Create a library folder for App Engine to use in production:```mkdir lib```
 * Navigate to the app home directory
+* Create a library folder for App Engine to use in production:```mkdir lib```
 * Type ```pwd``` to find the file path
 * Execute ```pip install -t <path copied above>/lib google-auth google-auth-httplib2 google-api-python-client --upgrade```
 
@@ -37,13 +37,14 @@ Now the packages should be installed in the lib folder
 * Name your service account
 * Select "Furnish a new private key"
 * Navigate to the app and create a folder: ```mkdir credentials```
-* Insert the credential json into the file you just created and call it sheets-cred.json
-
-## Starting the dev server
-
-Navigate to the home folder and type: ```dev_appserver.py ./```
+* Insert the credential json into the file you just created and call it "sheets-cred.json"
 
 ## Editing your sheets
 
 In reddit_data.py, changed the 'spreadsheetId' and 'rangeName' variables to your represent your sheet
+
+
+## Starting the dev server
+
+Navigate to the home folder and type: ```dev_appserver.py ./```. You should see instructions to find your dev server at http://localhost:8080
 
