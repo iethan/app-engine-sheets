@@ -41,7 +41,7 @@ Now the packages should be installed in the lib folder
 
 ## Editing your sheets
 
-In reddit_data.py, changed the 'spreadsheetId' and 'rangeName' variables to your represent your sheet
+In data.py, changed the 'spreadsheetId' and 'rangeName' variables to your represent your sheet
 
 
 ## Starting the dev server
