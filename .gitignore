@@ -9,7 +9,7 @@ __pycache__/
 *.csv
 *.txt
 *.pyc
-lib/
+/lib
 # Distribution / packaging
 .Python
 env/
