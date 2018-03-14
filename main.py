@@ -16,7 +16,7 @@
 import logging
 
 from flask import Flask
-from reddit_data import response
+from data import response
 
 app = Flask(__name__)
 
