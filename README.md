@@ -1,11 +1,39 @@
-# App Engine Standard Flask Hello World
+# Instructions
 
-[![Open in Cloud Shell][shell_img]][shell_link]
+## Install gcloud
 
-[shell_img]: http://gstatic.com/cloudssh/images/open-btn.png
-[shell_link]: https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/GoogleCloudPlatform/python-docs-samples&page=editor&open_in_editor=appengine/standard/flask/hello_world/README.md
+From any folder, insert the following into your terminal:
 
-This sample shows how to use [Flask](http://flask.pocoo.org/) with Google App
-Engine Standard.
+```curl https://sdk.cloud.google.com | bash```
 
-For more information, see the [App Engine Standard README](../../README.md)
+Follow the instructions to make default zones for your projects.
+
+## Add this app to your local machine
+
+Go to the directory you'd like to add this project and in terminal:
+
+```git clone <name-of-the-git-repo> ```
+
+## Install required libaries to your machine
+
+```pip install google-auth google-auth-httplib2 google-api-python-client```
+
+## Adding to this app
+
+Create a library folder for App Engine to use in production:
+
+In the app: ```mkdir lib```
+
+## Adding credentials
+
+* Log in here: https://console.cloud.google.com
+* Follow: IAM & admin > Service Accounts > Create Service Account
+* Name your service account
+* Select "Furnish a new private key"
+* Navigate to the app and create a folder: ```mkdir credentials```
+* Insert the credential json into the file you just created and call it sheets-cred.json
+
+## Starting the dev server
+
+Navigate to the home folder and type: ```dev_appserver.py ./```
+
