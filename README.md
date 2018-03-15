@@ -16,8 +16,18 @@ Go to the directory you'd like to add this project and in terminal:
 
 ## Install required libaries to your machine
 
-In terminal: ```pip install google-auth google-auth-httplib2 google-api-python-client```
+Normally, you would install Google Auth, and the Python client onto your local machine like this:
 
+```pip install google-auth google-auth-httplib2 google-api-python-client```
+
+However, you might run into this error:
+
+```    raise ImportError('No module named %s' % fullname)
+ImportError: No module named google.oauth2```
+
+If this is the case, uninstall all Google libraries from your local machine's environment using pip uninstall, e.g.:
+
+```sudo pip uninstall google-auth```
 
 ## Adding to this app
 

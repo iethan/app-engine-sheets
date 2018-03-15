@@ -16,10 +16,10 @@ else:
 	#Development
 	from google.oauth2 import service_account
 	
-	SERVICE_ACCOUNT_FILE = '/credentials/sheets-cred.json'
+	SERVICE_ACCOUNT_FILE = './credentials/sheets-cred.json'
 
 	credentials = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, 
 																		scopes=SCOPES)
 
 service = googleapiclient.discovery.build('sheets', 'v4', credentials=credentials)
-response = service.spreadsheets().values().get(spreadsheetId=apreadsheetId, range=rangeName).execute()
+response = service.spreadsheets().values().get(spreadsheetId=spreadsheetId, range=rangeName).execute()
