@@ -22,8 +22,10 @@ Normally, you would install Google Auth, and the Python client onto your local m
 
 However, you might run into this error:
 
-```    raise ImportError('No module named %s' % fullname)
-ImportError: No module named google.oauth2```
+```    
+	raise ImportError('No module named %s' % fullname)
+ImportError: No module named google.oauth2 
+```
 
 If this is the case, uninstall all Google libraries from your local machine's environment using pip uninstall, e.g.:
 
