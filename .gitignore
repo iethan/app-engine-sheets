@@ -7,7 +7,6 @@ __pycache__/
 *.so
 *.json
 *.csv
-*.txt
 *.pyc
 
 # Distribution / packaging
